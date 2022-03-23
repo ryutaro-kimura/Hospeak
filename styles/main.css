@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 以下はデフォルトのCSS */
+
 * {
   box-sizing: border-box;
 }

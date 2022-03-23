@@ -1,8 +1,8 @@
 import SmallCard from '../components/SmallCard';
 import { projectIcons } from '../components/Icons';
+import { TextBox } from '../components/TextBox';
 
 import { projects } from '../utils/projectsData';
-import { TextBox } from '../components/TextBox';
 
 const Home = () => (
   <div className="home">
@@ -15,6 +15,9 @@ const Home = () => (
       })}
     </div>
     <TextBox></TextBox>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
   </div>
 );
 
