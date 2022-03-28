@@ -38,19 +38,19 @@ h1 {
 }
 
 .card-small {
-  width: 346px;
-  height: 256px;
+  width: 150px;
+  height: 100px;
   border-radius: 6px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 28px;
-  padding-bottom: 28px;
+  /* padding-bottom: 28px; */
   color: #393939;
-  text-decoration: none;
+  /* text-decoration: none; */
   background-color: #ffffff;
-  transition: ease-in-out background-color 0.15s;
+  /* transition: ease-in-out background-color 0.15s; */
 }
 
 .card-small:hover {
@@ -59,18 +59,19 @@ h1 {
 }
 
 .card-small h3 {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.1px;
 }
 
+/* gridをtailwindでやるのでコメントアウト
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 346px);
+  grid-template-columns: repeat(2, 346px);
   grid-template-rows: repeat(2, 256);
   grid-gap: 50px;
-}
+} */
 
 .project {
   display: flex;
