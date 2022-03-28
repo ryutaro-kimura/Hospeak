@@ -12,12 +12,12 @@ const Home = () => (
         <div className="flex justify-center mt-8">
           <ToggleDarkMode />
         </div>
-        <h1>Nurse Speak</h1>
-        {/* <h2>俺の思い伝われ</h2> */}
-        <div className="grid grid-cols-2 gap-4">
+        <h1>Hospeak</h1>
+        <h2>俺の思い伝われ</h2>
+        <div className="card-grid">
           {projects.map((project) => {
             const Icon = projectIcons[project.id];
-            return <SmallCard key={project.id} Icon={Icon} title={project.name} />;
+            return <SmallCard key={project.id} Icon={Icon} title={project.name} slug={project.slug} />;
           })}
         </div>
         <TextBox />
