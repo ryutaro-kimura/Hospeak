@@ -10,7 +10,6 @@
   "dependencies": {
     "@svgr/webpack": "^6.2.1",
     "isomorphic-unfetch": "^3.0.0",
-    "microsoft-cognitiveservices-speech-sdk": "^1.20.0",
     "next": "^10.0.7",
     "react": "^17.0.2",
     "react-dom": "16.13.1"
@@ -21,6 +20,7 @@
     "autoprefixer": "^10.4.4",
     "eslint-plugin-react-hooks": "^4.3.0",
     "git-cz": "^4.8.0",
+    "node-fetch": "^3.2.3",
     "postcss": "^8.4.12",
     "serve": "^11.3.2",
     "tailwindcss": "^3.0.23",
