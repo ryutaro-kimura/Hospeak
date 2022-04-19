@@ -134,6 +134,51 @@ a.card-small:active:before {
   letter-spacing: 1.1px;
 }
 
+/* フレーズのテキストボックス */
+.phrase-box {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+  color: #000;
+}
+.phrase-box input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+.phrase-label input[type='text']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+/* 話すボタン */
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: #ef8f3a;
+  box-shadow: 0px 2px 2px 1px #dcdcdc;
+  border-bottom: solid 5px #c97730;
+  text-decoration: none;
+  color: #fff;
+}
+
+button:active {
+  box-shadow: none;
+  position:relative;
+  border-bottom:none;
+  top:7px;
+}
+
+
 /* gridをtailwindでやるのでコメントアウト
 .card-grid {
   display: grid;

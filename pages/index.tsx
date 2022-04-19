@@ -24,9 +24,10 @@ const Home = ({value}) => {
           </div>
             <TextBox onTextToSpeech={textToSpeech}/>
           {/* <button onClick={() => textToSpeech()}>test</button> */}
-          <h1 className="text-3xl font-bold underline">
+          {/* tailwindの試し書き */}
+          {/* <h1 className="text-3xl font-bold underline">
             Hello world!
-          </h1>
+          </h1> */}
         </div>
       </div>
     </>
@@ -36,7 +37,7 @@ const Home = ({value}) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000'+'/api/textToSpeech')
+  const res = await fetch(process.env.HOSTNAME +'/api/textToSpeech')
     .then((response) => {
         if (!response.ok) {
             throw new Error();
