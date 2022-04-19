@@ -53,7 +53,7 @@ export const ToggleDarkMode = () => {
           onChange={handleChangeDarkMode}
         />
         <label htmlFor="toggle" className="toggle-label">
-          toggle
+          {/* toggle */}
         </label>
       </div>
       <div className="text-xs">
