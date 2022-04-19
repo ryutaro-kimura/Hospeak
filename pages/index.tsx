@@ -36,26 +36,26 @@ const Home = ({value}) => {
 
 export default Home;
 
-export const getStaticProps = async () => {
-  const res = await fetch(process.env.HOSTNAME +'/api/textToSpeech')
-    .then((response) => {
-        if (!response.ok) {
-            throw new Error();
-        }
-        response.json().then((value) => {
-            console.log(value);
-            return {
-              props: value
-            }
-          }
-        )
-        }, (error) => {
-          console.error("error:", error.message);
-        });
-    return {
-      props: {}
-    }
-}
+// export const getStaticProps = async () => {
+//   const res = await fetch(process.env.HOSTNAME +'/api/textToSpeech')
+//     .then((response) => {
+//         if (!response.ok) {
+//             throw new Error();
+//         }
+//         response.json().then((value) => {
+//             console.log(value);
+//             return {
+//               props: value
+//             }
+//           }
+//         )
+//         }, (error) => {
+//           console.error("error:", error.message);
+//         });
+//     return {
+//       props: {}
+//     }
+// }
 
 const textToSpeech = async (phrase) => {
   fetch('/api/textToSpeech')
