@@ -31,6 +31,52 @@ h1 {
   margin-top: 45px;
 }
 
+/* 「伝えたいこと」 */
+h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  margin-top: 45px;
+}
+
+/* 吹き出しの文字 */
+h3 {
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+
+/*枠線つき吹き出し*/
+.balloon{
+  position: relative;
+  padding: 2em;
+  border: 3px solid #ef8f3a;
+  background-color: #ffffff;
+}
+.balloon:before,
+.balloon:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+}
+.balloon:before{
+  top: -40px;
+  border-style: solid;
+  border-color: transparent transparent #ef8f3a transparent;
+  border-width: 0 45px 40px 0;
+}
+.balloon:after{
+  top: -34px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  border-width: 0 39px 35px 0;
+  z-index: 10;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -53,9 +99,32 @@ h1 {
   /* transition: ease-in-out background-color 0.15s; */
 }
 
-.card-small:hover {
-  background-color: #f1f9ff;
+a.card-small {
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border-radius: 0;
+}
+
+a.card-small:hover {
+  background-color: #fffcf1;
   cursor: pointer;
+  -webkit-transform: translate(0, 3px);
+  transform: translate(0, 3px);
+}
+
+a.card-small:hover:before {
+  bottom: -5px;
+}
+
+a.card-small:active {
+  -webkit-transform: translate(0, 7px);
+  transform: translate(0, 7px);
+}
+
+a.card-small:active:before {
+  bottom: -1px;
 }
 
 .card-small h3 {
